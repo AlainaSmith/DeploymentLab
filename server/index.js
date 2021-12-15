@@ -11,5 +11,16 @@ app.get('/', function(req, res) {
 
 const port = process.env.PORT || 4006
 
+app.get('/js', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/main.js'))
+  })
+
+
+app.post('/js', (req,res))
+
+
+
+
+
 app.listen(port, () => {
     console.log(`Avengers! Assemble... on port ${port}`)})
